@@ -8,3 +8,20 @@ Main features are:
 - History management of past searches.
 
 <p align="center"><img src="github-assets/flickr-screenshot.png"></p>
+
+## Getting started
+
+- Update [CocoaPods](http://cocoapods.org/) dependencies, from terminal type
+  ```
+  pod install
+  ```
+  
+- Open project using `Flickr Search.xcworkspace`  
+
+- Flickr API key 
+  - [Create an app](https://www.flickr.com/services/) or [Apps by you](https://www.flickr.com/services/apps/by/me)
+  - Edit `AISearchClient.m`
+  ``` objc
+  #error Add your Flickr API Key below.
+  static NSString *const AISearchClientFlickrAPIKey = @"<YOUR_FLICKR_API_KEY>";
+  ```
